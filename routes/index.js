@@ -1,0 +1,1 @@
+// routes for the homepage and static pages
