@@ -1,0 +1,53 @@
+.dashboard-layout {
+    display: grid;
+    gap: 1.5rem;
+    padding: 2rem;
+
+    grid-template-areas:
+    "welcome calendar"
+    "tasks journal"
+    "tasks extras";
+
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto auto auto;
+}
+
+.welcome-box {
+    grid-area: welcome;
+}
+
+.weekly-calendar {
+    grid-area: calendar;
+}
+
+.tasks {
+    grid-area: tasks;
+}
+
+.journal {
+    grid-area: journal;
+}
+
+.extras {
+    grid-area: extras;
+}
+
+.dashboard-layout > div {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive layout - mobile design */
+@media (max-width: 768px) {
+  .dashboard-layout {
+    grid-template-areas:
+      "welcome"
+      "calendar"
+      "tasks"
+      "journal"
+      "extras";
+    grid-template-columns: 1fr;
+  }
+}

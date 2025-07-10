@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/form.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
+
 <body>
     <main>
         <div id="registerForm" class="container d-flex align-items-center justify-content-center vh-100">
             <form action="/register" method="post">
                 <h4>Register to create your new account!</h4>
                 <p>Enter the following information to be able to access the amazing features on this website.</p>
-                
+
                 <div id="first-name" class="mb-3">
                     <label for="first-name-detail" class="form-label">First Name</label>
-                    <input type="text" name="first-name-detail" id="first-name-detail"
-                    pattern="[A-Z][a-z]*" required class="form-control">
+                    <input type="text" name="first-name-detail" id="first-name-detail" pattern="[A-Z][a-z]*" required
+                        class="form-control">
                 </div>
 
                 <div id="last-name" class="mb-3">
                     <label for="last-name-detail" class="form-label">Last Name</label>
-                    <input type="text" name="last-name-detail" id="last-name-detail"
-                    pattern="[A-Z][a-z]*" required class="form-control">
+                    <input type="text" name="last-name-detail" id="last-name-detail" pattern="[A-Z][a-z]*" required
+                        class="form-control">
                 </div>
 
                 <div id="email" class="mb-3">
@@ -32,7 +34,9 @@
 
                 <div id="password" class="mb-4">
                     <label for="pw-detail" class="form-label">Password</label>
-                    <input class="form-control" type="password" name="pw-detail" id="pw-detail" pattern="(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$" title="Password must be at least 8 characters and include at least one uppercase letter, one number, and one symbol.">
+                    <input class="form-control" type="password" name="pw-detail" id="pw-detail"
+                        pattern="(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$"
+                        title="Password must be at least 8 characters and include at least one uppercase letter, one number, and one symbol.">
                 </div>
 
                 <div id="register-buttons" class="d-flex justify-content-center gap-3 mt-3">
@@ -43,4 +47,5 @@
         </div>
     </main>
 </body>
+
 </html>
