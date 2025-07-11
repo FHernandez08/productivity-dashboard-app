@@ -1,35 +1,35 @@
 .dashboard-layout {
-    display: grid;
-    gap: 1.5rem;
-    padding: 2rem;
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem;
 
-    grid-template-areas:
+  grid-template-areas:
     "welcome calendar"
     "tasks journal"
     "tasks extras";
 
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: auto auto auto;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: auto auto auto;
 }
 
 .welcome-box {
-    grid-area: welcome;
+  grid-area: welcome;
 }
 
 .weekly-calendar {
-    grid-area: calendar;
+  grid-area: calendar;
 }
 
 .tasks {
-    grid-area: tasks;
+  grid-area: tasks;
 }
 
 .journal {
-    grid-area: journal;
+  grid-area: journal;
 }
 
 .extras {
-    grid-area: extras;
+  grid-area: extras;
 }
 
 .dashboard-layout > div {

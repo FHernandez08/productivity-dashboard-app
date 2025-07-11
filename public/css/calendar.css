@@ -1,0 +1,50 @@
+.calendar-layout {
+    display: grid;
+    gap: 1.5rem;
+    padding: 2rem;
+    grid-template-columns: 1fr;
+}
+
+.calendar-header {
+    grid-row: 1;
+}
+
+.monthly-calendar {
+    grid-row: 2;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.important-dates {
+    grid-row: 3;
+}
+
+.calendar-layout > div {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* mobile design */
+@media (min-width: 768px) {
+    .calendar-layout {
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        "header header"
+        "month important";
+    }
+  
+    .calendar-header {
+      grid-area: header;
+    }
+  
+    .monthly-calendar {
+      grid-area: month;
+    }
+  
+    .important-dates {
+      grid-area: important;
+    }
+  }
