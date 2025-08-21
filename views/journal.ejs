@@ -30,6 +30,7 @@
             
                 <!-- Row 2 & 3 = same as tasks, it will be covering most of the page -->
                 <div class="journal-main"></div>
+                <!--with JavaScript, will create a new card once the form is submitted-->
             </div>
         </div>
 
@@ -38,15 +39,15 @@
                 <h4>Enter a new page into your journal!</h4>
                 <p>Complete the following to submit your entry and it will appear on the page.</p>
                 
-                <div id="heading">
+                <div id="heading" class="mb-3">
                     <input type="text" name="entry-header" placeholder="Title of your journal entry">
                 </div>
 
-                <div id="timestamp">
+                <div id="timestamp" class="mb-3">
                     <input type="datetime-local" name="entry-date" id="entry-date">
                 </div>
 
-                <div id="entry-content">
+                <div id="entry-content" class="mb-3">
                     <label for="journal-details">Enter your thoughts</label>
                     <textarea name="entry-content" id="journal-details" rows="10" cols="40"></textarea>
                 </div>
