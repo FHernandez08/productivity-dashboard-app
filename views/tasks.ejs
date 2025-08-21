@@ -18,12 +18,62 @@
         <div class="container py-4">
             <div class="tasks-layout">
                 <!-- Row 1 -->
-                <div class="task-header"></div>
-                <div class="add-task"></div>
+                <div class="task-header">
+                    <h1>Current Tasks</h1>
+                </div>
+                <div class="add-task">
+                    <button id="add-task-btn" class="btn btn-light"><i class="fa-solid fa-plus"></i></button>
+                </div>
             
                 <!--Row 2 & Row 3 = the tasks table will span for the whole width-->
-                <div class="tasks-main"></div>
+                <div class="tasks-main">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Task name</th>
+                                <th>Category</th>
+                                <th>Due Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        
+                    </table>
+                </div>
             </div>
+        </div>
+        <div id="new-task-form" class="container d-flex align-items-center justify-content-center vh-100">
+            <form action="task-entry" method="post">
+            <p>Enter the following details to create a new event!</p>
+
+            <div id="task-form-name" class="mb-3">
+                <label for="name-detail" class="form-label">Task Name</label>
+                <input type="text" name="task-name-detail" id="name-detail">
+            </div>
+            <div id="task-category-name" class="mb-3">
+                <label for="category-detail" class="form-label">Category</label>
+                <input type="text" name="task-category-detail" id="category-detail">
+            </div>
+            <div id="task-dueDate" class="mb-3">
+                <label for="dueDate-detail" class="form-label">Due Date</label>
+                <input type="datetime-local" name="task-dueDate-detail" id="dueDate-detail">
+            </div>
+            <div id="task-status" class="mb-3">
+                <label for="status-detail" class="form-label">Status</label>
+                <select name="task-status-detail" id="status-detail">
+                    <option value="" selected>--Please choose an option--</option>
+                    <option value="not started">Not Started</option>
+                    <option value="in progress">In Progress</option>
+                    <option value="completed">Completed</option>
+                    <option value="blocked">Blocked</option>
+                </select>
+            </div>
+
+            <div id="register-buttons" class="d-flex justify-content-center gap-3 mt-3">
+                <button type="reset" id="register-clear" class="btn btn-secondary">Clear</button>
+                <button type="submit" id="register-submit" class="btn btn-success">Create Account!</button>
+            </div>
+        </form>
         </div>
     </main>
 

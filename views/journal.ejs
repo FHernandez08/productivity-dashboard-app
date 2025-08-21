@@ -18,12 +18,44 @@
         <div class="container py-4">
             <div class="journal-layout">
                 <!-- Row 1 -->
-                <div class="journal-header"></div>
-                <div class="journal-entry"></div>
+                <div class="journal-header">
+                    <h1>
+                        <!--Will replace with the user's name-->
+                        Your Journal
+                    </h1>
+                </div>
+                <div class="journal-entry">
+                    <button type="button" class="btn btn-warning">New Entry</button>
+                </div>
             
                 <!-- Row 2 & 3 = same as tasks, it will be covering most of the page -->
                 <div class="journal-main"></div>
             </div>
+        </div>
+
+        <div id="journal-entry-form">
+            <form action="/journal-form-submit" method="post">
+                <h4>Enter a new page into your journal!</h4>
+                <p>Complete the following to submit your entry and it will appear on the page.</p>
+                
+                <div id="heading">
+                    <input type="text" name="entry-header" placeholder="Title of your journal entry">
+                </div>
+
+                <div id="timestamp">
+                    <input type="datetime-local" name="entry-date" id="entry-date">
+                </div>
+
+                <div id="entry-content">
+                    <label for="journal-details">Enter your thoughts</label>
+                    <textarea name="entry-content" id="journal-details" rows="10" cols="40"></textarea>
+                </div>
+
+                <div id="register-buttons" class="d-flex justify-content-center gap-3 mt-3">
+                    <button type="reset" id="register-clear" class="btn btn-secondary">Clear</button>
+                    <button type="submit" id="register-submit" class="btn btn-success">Create Account!</button>
+                </div>
+            </form>
         </div>
     </main>
 
