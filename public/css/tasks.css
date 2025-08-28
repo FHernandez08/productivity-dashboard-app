@@ -28,6 +28,9 @@
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+#new-task-form {
+    display: none !important;
+}
 
 /* mobile design */
 @media (max-width: 768px) {
